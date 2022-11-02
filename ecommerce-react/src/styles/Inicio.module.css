@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap");
+
+.perfumes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 3.5rem;
+  background-color: white;
+}
+
+.name {
+  font-size: 1.8rem;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  margin-top: 3rem;
+}
+
+.title {
+  font-size: 4rem;
+  color: var(--primary);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+}
+
+.products {
+  width: 30rem;
+  border: 3px solid black;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.products .img {
+  width: 12rem;
+  margin-left: 7rem;
+  border-radius: 50%;
+}
+
+.products .resumen {
+  text-align: center;
+  text-transform: lowercase;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.products .precio {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e99401;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 2rem;
+}
+
+.products .btnProduct {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #242423;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Outfit", sans-serif;
+  font-weight: 900;
+  margin-top: 3rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.products .btnProduct:hover {
+  background-color: #33353370;
+}
+
+.products a {
+  text-decoration: none;
+  color: azure;
+}

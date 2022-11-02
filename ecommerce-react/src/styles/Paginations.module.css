@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.page_item a {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 5px;
+  border: 2px solid var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.page_item a:hover {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}

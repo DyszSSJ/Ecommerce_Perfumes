@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #242423;
+  --black: #262626;
+  --white: #fff;
+  --fuente-principal: "Outfit", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.5;
+  margin: 0%;
+  /* background-color: #f8f9fa; */
+}
+[class*="contenedor"],
+main {
+  width: min(95%, 120rem);
+  margin: 3rem auto;
+}
+[class*="heading"] {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--primary);
+  margin: 5rem 0;
+}
+
+/* Header */
+
+.header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("./assets/Marketing.jpg");
+  padding: .5rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.header .logo {
+  width: 16rem;
+  height: 15rem;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header .navegacion {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .header .navegacion {
+    margin-top: 0;
+  }
+}
+
+.header .navegacion a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  align-items: center;
+  padding: 0.5rem 1.3rem;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.header .navegacion a:hover,
+.header .active {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+.carrito {
+  width: 4rem;
+  height: 3.2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #91785d;
+  padding: .5rem 0;
+  margin-top: 5rem;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+/* Slider */
+
+.portfolio .swiper {
+  overflow: hidden;
+}
+
+.portfolio-slider {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.portfolio-slider .swiper-slide {
+  width: 80rem;
+}
+.portfolio img {
+  width: 100%;
+  height: 40rem;
+  margin-left: .5rem;
+  filter: drop-shadow(-12px 15px 13px rgba(163, 163, 163, 0.25));
+}
+
+.flexha-D {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  margin-top: -22rem;
+  align-items: center;
+  z-index: 4;
+  transition: all 0.3s ease;
+}
+
+.flexha-D:hover {
+  transform: scale(1.1);
+  background-color: var(--primary);
+}
+
+.flecha {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  margin-left: 127rem;
+  margin-top: -22rem;
+  align-items: center;
+  z-index: 4;
+  transition: all 0.3s ease;
+}
+
+.flecha:hover {
+  transform: scale(1.1);
+  background-color: var(--primary);
+}
+
+.icon-trash {
+  width: 2rem;
+  height: 3rem;
+  align-items: center;
+}
+
+

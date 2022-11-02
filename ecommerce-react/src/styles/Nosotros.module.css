@@ -1,0 +1,22 @@
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.img {
+    width: 70rem;
+    padding: 4rem;
+}
+
+.resumen {
+    width: 63rem;
+    padding: 3rem;
+    padding-left: -3rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: justify;
+    
+}
